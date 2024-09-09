@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update your personal details</title>
+    <style>
+        /* General styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .box {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .grey-bg {
+            background-color: #f2f2f2; /* Grey background color */
+        }
+    </style>
+</head>
+<body>
+    <h1>IIT PATNA</h1>
+    <h2>Application for Faculty Position</h2>
+    <div class="box">
+        <h3>Welcome</h3>                       
+    </div>
+    <form class="form-horizontal" role="form" method="post" action="/page" onClick="return empty()" onsubmit="saveData()">
+       
+        <div class="container">
+            <h3>2.Educational qualifications</h3>
+            <div class="box">
+                <h4>(A) Details of PhD*</h4>
+                <label for="ui">University/Institute</label>
+                <input type="text" id="ui" name="ui" placeholder="University/Institute">
+                <br><br>
+                <label for="dp">Department</label>
+                <input type="text" id="dp" name="dp" placeholder="Department">
+                <br><br>
+                <label for="name">Nmae of PhD Supervisor</label>
+                    <input type="text" id="name" name="name" placeholder="Name_of_PhD_Supervisor">
+                    <br><br>
+                    <label for="year">Year of Joining</label>
+                    <input type="text" id="year" name="year" placeholder="Year_of_joining">
+                    <br><br>
+                    <label for="date">Date of Successful Thesis Defence</label>
+                    <input type="text" id="date" name="date" placeholder="date">
+                    <br><br>
+                    <label for="da">Date of award</label>
+                    <input type="text" id="da" name="da" placeholder="Date_of_award">
+                    <br><br>
+                    <label for="title">Title of Phd Thesis</label>
+                    <input type="text" id="title" name="title" placeholder="Title_of_PhD_thesis">
+                    <br><br>
+                <!-- Add other PhD details inputs here -->
+            </div>
+            <div class="box">
+                <h4>(B) Academic Details - M.Tech./M.E./PG Details</h4>
+                <!-- Add M.Tech./M.E./PG details inputs here -->
+                <label for="dc1">Degree/Certificate</label>
+                    <input type="text" id="dc1" name="dc1" placeholder="Degree/Certificate">
+                    <br><br>
+                    <label for="ui1">University/Institute</label>
+                    <input type="text" id="ui1" name="ui1" placeholder="University/Institute">
+                    <br><br>
+                    <label for="bs2">Branch/Stream</label>
+                    <input type="text" id="bs2" name="bs2" placeholder="Branch/Stream">
+                    <br><br>
+                    <label for="yj2">Year of Joining</label>
+                    <input type="text" id="yj2" name="yj2" placeholder="Year_of_joining">
+                    <br><br>
+                    <label for="yc2">Year of Completion</label>
+                    <input type="text" id="yc2" name="yc2" placeholder="Year_of_completion">
+                    <br><br>
+                    <label for="d2">Duration(in years)</label>
+                    <input type="text" id="d2" name="d2" placeholder="Duration">
+                    <br><br>
+                    <label for="pc2">Percentage/CGPA</label>
+                    <input type="text" id="pc2" name="pc2" placeholder="Pecentage/CGPA">
+                    <br><br>
+                    <label for="di2">Division/Class</label>
+                    <input type="text" id="di2" name="di2" placeholder="Divison/Class">
+                    <br><br>
+            </div>
+            <div class="box">
+                <h4>(C) Academic Details - B.Tech./B.E./UG Details</h4>
+                    <label for="dc3">Degree/Certificate</label>
+                    <input type="text" id="dc3" name="dc3" placeholder="Degree/Certificate">
+                    <br><br>
+                    <label for="ui3">University/Institute</label>
+                    <input type="text" id="ui3" name="ui3" placeholder="University/Institute">
+                    <br><br>
+                    <label for="bs3">Branch/Stream</label>
+                    <input type="text" id="bs3" name="bs3" placeholder="Branch/Stream">
+                    <br><br>
+                    <label for="yj3">Year of Joining</label>
+                    <input type="text" id="yj3" name="yj3" placeholder="Year_of_joining">
+                    <br><br>
+                    <label for="yc3">Year of Completion</label>
+                    <input type="text" id="yc3" name="yc3" placeholder="Year_of_completion">
+                    <br><br>
+                    <label for="d3">Duration(in years)</label>
+                    <input type="text" id="d3" name="d3" placeholder="Duration">
+                    <br><br>
+                    <label for="pc3">Percentage/CGPA</label>
+                    <input type="text" id="pc3" name="pc3" placeholder="Pecentage/CGPA">
+                    <br><br>
+                    <label for="d4">Division/Class</label>
+                    <input type="text" id="d4" name="d4" placeholder="Divison/Class">
+                    <br><br>
+            </div>
+            <div class="box">
+                <table id="myTable" border="1">
+                    <tr>
+                        <th>10th/12th/HSC/Diploma</th>
+                        <th>School</th>
+                        <th>Year of passing</th>
+                        <th>Percentage/Grade</th>
+                    </tr>
+                    <tr>
+                        <td>12th/HSC/Diploma</td>
+                        <td><input type="text" id="school1" name="school1"/></td>
+                        <td><input type="text" id="year1" name="year1"/></td>
+                        <td><input type="text" id="perce1" name="perce1"/></td>
+                    </tr>
+                    <tr>
+                        <td>10th</td>
+                        <td><input type="text" id="school2" name="school2"/></td>
+                        <td><input type="text" id="year2" name="year2"/></td>
+                        <td><input type="text" id="perce2" name="perce2"/></td>
+                    </tr>
+                </table>
+                <br>
+            </div>
+            <div class="box">
+                <table id="myTab" border="1">
+                    <tr>
+                        <th>Degree/Certificate</th>
+                        <th>University/Institute</th>
+                        <th>Branch/Stream</th>
+                        <th>year</th>
+                        <th>CGPA</th>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="deg1" name="deg1"/></td>
+                        <td><input type="text" id="un1" name="un1"/></td>
+                        <td><input type="text" id="br1" name="br1"/></td>
+                        <td><input type="text" id="y1" name="y1"/></td>
+                        <td><input type="text" id="c1" name="c1"/></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="deg2" name="deg2"/></td>
+                        <td><input type="text" id="un2" name="un2"/></td>
+                        <td><input type="text" id="br2" name="br2"/></td>
+                        <td><input type="text" id="y2" name="y2"/></td>
+                        <td><input type="text" id="c2" name="c2"/></td>
+                    </tr>
+                </table>
+                <br>
+            </div>
+                      
+        </div>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+ 

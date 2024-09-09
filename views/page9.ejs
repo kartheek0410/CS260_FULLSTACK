@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update your personal details</title>
+    <style>
+        /* General styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .box {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .grey-bg {
+            background-color: #f2f2f2; /* Grey background color */
+        }
+    </style>
+</head>
+<body>
+    <h1>IIT PATNA</h1>
+    <h2>Application for Faculty Position</h2>
+    <div class="box">
+        <h3>Welcome</h3>                       
+    </div>
+    <form class="form-horizontal" role="form" method="post" action="/page9" onClick="return empty()" onsubmit="saveData()">
+       
+        <div class="container">
+            <h3>23.Final Declaration</h3>
+            <div class="box">
+                <p>I hereby declare that I have carefully read and understood the instructions and particulars mentioned in the advertisment and this application form. I further declare that all the entries along with the attachments uploaded in this form are true to the best of my knowledge and belief.</p>
+                <input type="radio" name="yes" value="yes" id="yes" required>
+                <label for="yes"></label>
+            </div>
+            <p>Note: The form cannot be edited.</p>
+        </div>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

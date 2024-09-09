@@ -1,0 +1,22 @@
+CREATE TABLE page8(
+    pic1 LONGBLOB,
+    pic2 LONGBLOB,
+    pic3 LONGBLOB,
+    pic4 LONGBLOB,
+    pic5 LONGBLOB,
+    pic6 LONGBLOB,
+    pic7 LONGBLOB,
+    pic8 LONGBLOB,
+    pic9 LONGBLOB,
+    pic10 LONGTEXT,
+    n5 VARCHAR(255),
+    p5 VARCHAR(255),
+    o5 VARCHAR(255),
+    s5 VARCHAR(255),
+    y5 VARCHAR(255),
+    n6 VARCHAR(255),
+    p6 VARCHAR(255),
+    o6 VARCHAR(255),
+    s6 VARCHAR(255),
+    y6 VARCHAR(255)
+);

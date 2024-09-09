@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update your personal details</title>
+    <style>
+        /* General styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .box {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .grey-bg {
+            background-color: #f2f2f2; /* Grey background color */
+        }
+    </style>
+</head>
+<body>
+    <h1>IIT PATNA</h1>
+    <h2>Application for Faculty Position</h2>
+    <div class="box">
+        <h3>Welcome</h3>                       
+    </div>
+    <form class="form-horizontal" role="form" method="post" action="/page8" onClick="return empty()" onsubmit="saveData()">
+       
+        <div class="container">
+            <h3>20.Reprints of 5 best Reasearch papers*</h3>
+            <div class="box">
+                <h4>Upload 5 Best Research Papers in a single PDF < 6MB </h4>
+                <label for="pic1">update 5 best papers</label>
+                    <input type="file" id="pic1" name="pic1" accept="image/*" >
+                    <br><br>
+            </div>
+        </div>
+        <div class="container">
+            <h3>21.Check List of the documents attached with the online application *</h3>
+            <div class="box">
+                <h4>Check List of the documents attached with the online application (Documents should be uploaded in PDF format only):
+                    Uploaded PDF files will not be displayed as part of the printed form.</h4>
+                <label for="pic2">PhD Certificate</label>
+                    <input type="file" id="pic2" name="pic2" accept="image/*" >
+                    <br><br>
+                <label for="pic3">Update All semester/year(UG)Marksheets and degree certificate</label>
+                    <input type="file" id="pic3" name="pic3" accept="image/*" >
+                    <br><br> 
+                <label for="pic4">Update All semester/year (PG)Marksheets and degree certificate</label>
+                    <input type="file" id="pic4" name="pic4" accept="image/*" >
+                    <br><br>
+                <label for="pic5">Update 12th/HSC/Diploma/Marksheet(s) and passing certificate</label>
+                    <input type="file" id="pic5" name="pic5" accept="image/*" >
+                    <br><br>
+                <label for="pic6">Update 10th SSCMarksheet(s) and passing certificate</label>
+                    <input type="file" id="pic6" name="pic6" accept="image/*" >
+                    <br><br>
+                <label for="pic7">Update Pay Slip</label>
+                    <input type="file" id="pic7" name="pic7" accept="image/*" >
+                    <br><br>
+                <label for="pic8">Undertaking-in case, NOC is not available at the time of application but will be provided at the time of interview</label>
+                    <input type="file" id="pic8" name="pic8" accept="image/*" >
+                    <br><br>
+                <label for="pic9">Upload any other document</label>
+                    <input type="file" id="pic9" name="pic9" accept="image/*" >
+                    <br><br>    
+            </div>
+            <div class="box">
+                <label for="pic10">Upload your Signature in JPG only</label>
+                    <input type="file" id="pic10" name="pic10" accept="image/*" >
+                    <br><br>
+            </div>
+        </div>
+        <div class="container">
+            <h3>22.Referees*</h3>
+            <div class="box">
+                <table id="myTable" border="1">
+                    <tr>
+                        <th>Name</th>
+                        <th>Position</th>
+                        <th>Organisation/Institution</th>
+                        <th>Email</th>
+                        <th>Contact No.</th>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="n5" name="n5"/></td>
+                        <td><input type="text" id="p5" name="p5"/></td>
+                        <td><input type="text" id="o5" name="o5"/></td>
+                        <td><input type="text" id="s5" name="s5"/></td>
+                        <td><input type="text" id="y5" name="y5"/></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="n6" name="n6"/></td>
+                        <td><input type="text" id="p6" name="p6"/></td>
+                        <td><input type="text" id="o6" name="o6"/></td>
+                        <td><input type="text" id="s6" name="s6"/></td>
+                        <td><input type="text" id="y6" name="y6"/></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

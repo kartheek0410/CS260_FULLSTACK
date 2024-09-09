@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update your personal details</title>
+    <style>
+        /* General styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .box {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .grey-bg {
+            background-color: #f2f2f2; /* Grey background color */
+        }
+    </style>
+</head>
+<body>
+    <h1>IIT PATNA</h1>
+    <h2>Application for Faculty Position</h2>
+    <div class="box">
+        <h3>Welcome</h3>                       
+    </div>
+    <form class="form-horizontal" role="form" method="post" action="/page6" onClick="return empty()" onsubmit="saveData()">
+       
+        <div class="container">
+            <h3>13.Research Supervision</h3>
+            <div class="box">
+                <h4>(A)PhD thesis Supervision</h4>
+                <table id="myTable" border="1">
+                    <tr>
+                        <th>S.no.</th>
+                        <th>Nmae of Student</th>
+                        <th>Role</th>
+                        <th>Year of completion</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td><input type="text" id="p1" name="p1"/></td>
+                        <td><label for="r1">Role</label>
+                            <select name="r1" id="r1">
+                            <option value="sup">Supervisor with co-supervisor</option>
+                            <option value="cosup">Cosupervisor</option>
+                            </select>
+                        <</td>
+                        <td><input type="text" id="y1" name="y1"/></td>
+                    </tr>
+                </table>
+                <br>
+            </div>
+                <div class="box">
+                    <h4>(B)M.Tech/M.E./Master's Degree</h4>
+                    <table id="myTabl" border="1">
+                        <tr>
+                            <th>S.no.</th>
+                            <th>Nmae of Student</th>
+                            <th>Role</th>
+                            <th>Year of completion</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td><input type="text" id="p2" name="p2"/></td>
+                            <td><label for="r2">Role</label>
+                                <select name="r2" id="r2">
+                                <option value="sup">Supervisor with co-supervisor</option>
+                                <option value="cosup">Cosupervisor</option>
+                                </select>
+                            <</td>
+                            <td><input type="text" id="y2" name="y2"/></td>
+                        </tr>
+                    </table>
+                    <br>
+                </div>
+                <div class="box">
+                    <h4>(C)B.Tech/B.E./Bachelor's Degree</h4>
+                    <table id="myTab" border="1">
+                        <tr>
+                            <th>S.no.</th>
+                            <th>Nmae of Student</th>
+                            <th>Role</th>
+                            <th>Year of completion</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td><input type="text" id="p3" name="p3"/></td>
+                            <td><label for="r3">Role</label>
+                                <select name="r3" id="r3">
+                                <option value="sup">Supervisor with co-supervisor</option>
+                                <option value="cosup">Cosupervisor</option>
+                                </select>
+                            <</td>
+                            <td><input type="text" id="y3" name="y3"/></td>
+                        </tr>
+                    </table>
+                    <br>
+                </div>
+            </div>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+    </html>

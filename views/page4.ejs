@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update your personal details</title>
+    <style>
+        /* General styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .box {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .grey-bg {
+            background-color: #f2f2f2; /* Grey background color */
+        }
+    </style>
+</head>
+<body>
+    <h1>IIT PATNA</h1>
+    <h2>Application for Faculty Position</h2>
+    <div class="box">
+        <h3>Welcome</h3>                       
+    </div>
+    <form class="form-horizontal" role="form" method="post" action="/page4" onClick="return empty()" onsubmit="saveData()">
+       
+        <div class="container">
+            <h3>5. Summary of Publications *</h3>
+            <div class="box">
+                <label for="ijp">Number of International Journal Papers</label>
+                <input type="text" id="ijp" name="ijp" placeholder="ijp">
+                <br> <br> 
+                <label for="njp">Number of National Journal Papers</label>
+                <input type="text" id="njp" name="njp" placeholder="njp">
+                <br> <br> 
+                <label for="icp">Number of International Conference Papers</label>
+                <input type="text" id="icp" name="icp" placeholder="icp">
+                <br> <br> 
+                <label for="ncp">Number of National Conference Papers</label>
+                <input type="text" id="ncp" name="ncp" placeholder="ncp">
+                <br> <br> 
+                <label for="np">Number of Patent(s) [Filed, Published, Granted]</label>
+                <input type="text" id="np" name="np" placeholder="np">
+                <br> <br>
+                <label for="nb">Number of Book(s)</label>
+                <input type="text" id="nb" name="nb" placeholder="nb">
+                <br> <br>
+                <label for="nbc">Number of Book Chapter(s)</label>
+                <input type="text" id="nbc" name="nbc" placeholder="nbc">
+                <br> <br>
+            </div>
+        </div>
+            <div class="container">
+                <h3>6. List of 10 Best Publications (Journal/Conference)</h3>
+            <div class="box">
+                <h4>List of 10 Best Publications (Journal/Conference) </h4>
+                <table id="myTable" border="1">
+                    <tr>
+                        <th>S.no.</th>
+                        <th>Author(s)</th>
+                        <th>Title</th>
+                        <th>Name of Journal/Conference</th>
+                        <th>Year, Vol., Page</th>
+                        <th>Impact Factor</th>
+                        <th>DOI</th>
+                        <th>Status</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td><input type="text" id="a1" name="a1"/></td>
+                        <td><input type="text" id="b1" name="b1"/></td>
+                        <td><input type="text" id="c1" name="c1"/></td>
+                        <td><input type="text" id="d1" name="d1"/></td>
+                        <td><input type="text" id="e1" name="e1"/></td>
+                        <td><input type="text" id="f1" name="f1"/></td>
+                        <td>
+                            <select id="g1" name="g1">
+                                <option value="published">Published</option>
+                                <option value="accepted">Accepted</option>
+                            </select>
+                        </td>
+                        
+
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td><input type="text" id="a2" name="a2"/></td>
+                        <td><input type="text" id="b2" name="b2"/></td>
+                        <td><input type="text" id="c2" name="c2"/></td>
+                        <td><input type="text" id="d2" name="d2"/></td>
+                        <td><input type="text" id="e2" name="e2"/></td>
+                        <td><input type="text" id="f2" name="f2"/></td>
+                        <td>
+                            <select id="g2" name="g2">
+                                <option value="published">Published</option>
+                                <option value="accepted">Accepted</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td><input type="text" id="a3" name="a3"/></td>
+                        <td><input type="text" id="b3" name="b3"/></td>
+                        <td><input type="text" id="c3" name="c3"/></td>
+                        <td><input type="text" id="d2" name="d3"/></td>
+                        <td><input type="text" id="e3" name="e3"/></td>
+                        <td><input type="text" id="f3" name="f3"/></td>
+                        <td>
+                            <select id="g3" name="g3">
+                                <option value="published">Published</option>
+                                <option value="accepted">Accepted</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+                <br>
+            </div>
+            </div>
+            <div class="container">
+                <h3>7. List of Patent(s), Book(s), Book Chapter(s)</h3>
+            <div class="box">
+                <h4>(A) Patent(s)  </h4>
+                <table id="myTable" border="1">
+                    <tr>
+                        <th>S.no.</th>
+                        <th>Inventor(s)	</th>
+                        <th>Title of Patent</th>
+                        <th>Country of Patent</th>
+                        <th>Patent Number</th>
+                        <th>Date of Filing</th>
+                        <th>Date of Published</th>
+                        <th>Status Filed/Published/Granted</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td><input type="text" id="h1" name="h1"/></td>
+                        <td><input type="text" id="i1" name="i1"/></td>
+                        <td><input type="text" id="j1" name="j1"/></td>
+                        <td><input type="text" id="k1" name="k1"/></td>
+                        <td><input type="text" id="l1" name="l1"/></td>
+                        <td><input type="text" id="m1" name="m1"/></td>
+                        <td><input type="text" id="n1" name="n1"/></td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td><input type="text" id="h2" name="h2"/></td>
+                        <td><input type="text" id="i2" name="i2"/></td>
+                        <td><input type="text" id="j2" name="j2"/></td>
+                        <td><input type="text" id="k2" name="k2"/></td>
+                        <td><input type="text" id="l2" name="l2"/></td>
+                        <td><input type="text" id="m2" name="m2"/></td>
+                        <td><input type="text" id="n2" name="n2"/></td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td><input type="text" id="h3" name="h3"/></td>
+                        <td><input type="text" id="i3" name="i3"/></td>
+                        <td><input type="text" id="j3" name="j3"/></td>
+                        <td><input type="text" id="k3" name="k3"/></td>
+                        <td><input type="text" id="l3" name="l3"/></td>
+                        <td><input type="text" id="m3" name="m3"/></td>
+                        <td><input type="text" id="n3" name="n3"/></td>
+                    </tr>
+                    
+                </table>
+                <br>
+            </div>
+
+
+            <div class="box">
+                <h4>(B) Book(s)   </h4>
+                <table id="myTable" border="1">
+                    <tr>
+                        <th>S.no.</th>
+                        <th>Author(s)</th>
+                        <th>Title of Book</th>
+                        <th>Year of Publication</th>
+                        <th>ISBN</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td><input type="text" id="h4" name="h4"/></td>
+                        <td><input type="text" id="i4" name="i4"/></td>
+                        <td><input type="text" id="j4" name="j4"/></td>
+                        <td><input type="text" id="k4" name="k4"/></td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td><input type="text" id="h5" name="h5"/></td>
+                        <td><input type="text" id="i5" name="i5"/></td>
+                        <td><input type="text" id="j5" name="j5"/></td>
+                        <td><input type="text" id="k5" name="k5"/></td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td><input type="text" id="h6" name="h6"/></td>
+                        <td><input type="text" id="i6" name="i6"/></td>
+                        <td><input type="text" id="j6" name="j6"/></td>
+                        <td><input type="text" id="k6" name="k6"/></td>
+                    </tr>
+                    
+                </table>
+                <br>
+            </div>
+
+            <div class="box">
+                <h4>(C) Book Chapter(s)   </h4>
+                <table id="myTable" border="1">
+                    <tr>
+                        <th>S.no.</th>
+                        <th>Author(s)</th>
+                        <th>Title of the Book Chapter(s)</th>
+                        <th>Year of Publication</th>
+                        <th>ISBN</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td><input type="text" id="h7" name="h7"/></td>
+                        <td><input type="text" id="i7" name="i7"/></td>
+                        <td><input type="text" id="j7" name="j7"/></td>
+                        <td><input type="text" id="k7" name="k7"/></td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td><input type="text" id="h8" name="h8"/></td>
+                        <td><input type="text" id="i8" name="i8"/></td>
+                        <td><input type="text" id="j8" name="j8"/></td>
+                        <td><input type="text" id="k8" name="k8"/></td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td><input type="text" id="h9" name="h9"/></td>
+                        <td><input type="text" id="i9" name="i9"/></td>
+                        <td><input type="text" id="j9" name="j9"/></td>
+                        <td><input type="text" id="k9" name="k9"/></td>
+                    </tr>
+                    
+                </table>
+                <br>
+            </div>
+            </div>
+
+            <div class="container">
+    <h3>8. Google Scholar Link *</h3>
+    <div class="box">
+        <h4>URL</h4>
+        <input type="text" id="googleScholarLink" name="googleScholarLink" placeholder="Enter your Google Scholar link" >
+    </div>
+</div>
+
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+               

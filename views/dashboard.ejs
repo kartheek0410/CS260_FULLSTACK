@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update your personal details</title>
+    <style>
+        /* General styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+      .container {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+      .box {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        /* Vertical line */
+      .container::after {
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            width: 1px;
+            background-color: #ccc;
+        }
+		.blackened-box {
+            width: 200px; /* Adjust width as needed */
+            height: 30px; /* Adjust height as needed */
+            background-color: black;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            line-height: 30px; /* Vertically center the text */
+        }
+    </style>
+</head>
+<body>
+    <h1>IIT PATNA</h1>
+    <h2>Application for Faculty Position</h2>
+	<form class="form-horizontal" role="form" method="post" action="/dashboard" onClick="return empty()">
+            <div class="box">
+                <h3>Welcome</h3>                       
+            </div>
+			
+            <div class="box">
+            
+            <!-- Add more fields as needed -->
+            <label for="Advertising">Advertising Number*</label>
+            <input type="text" id="Advertising" name="Advertising" placeholder="Advertising" required>
+            <br> <br> 
+			<label for="App">Applicaton number</label>
+            <div class="blackened-box" id="App">auto</div>
+			<br><br>
+            <label for="PAF">Post Applied for*</label>
+               <select name="PAF" id="PAF">
+               <option value="Profesor">Professor</option>
+               <option value="Assistant_prof">Assistant Professor</option>
+               </select>
+           <br><br>
+           <label for="DS">Department/School*</label>
+               <select name="DS" id="DS">
+               <option value="CE">Chemical Engineering</option>
+               <option value="CS">Computer Science</option>
+               </select>
+           <br><br>
+        </div>
+        <div class="container">
+            <h3>1.Update Personal Details</h3>
+            <div class="box">
+                
+                <!-- Personal details form fields -->
+                <label for="fname">First Name*</label>
+                    <input type="text" id="fname" name="fname" placeholder="First Name" required>
+                    <br><br>
+                    <label for="mname">Middle Name</label>
+                    <input type="text" id="mname" name="mname" placeholder="Middle Name">
+                    <br><br>
+                    <label for="lname">Last Name*</label>
+                    <input type="text" id="lname" name="lname" placeholder="Last Name" required>
+                    <br><br>
+                    <label for="nationality">Nationality*</label>
+                    <input type="text" id="nationality" name="nationality" placeholder="Nationality" required>
+                    <br><br>
+                    <label for="dob">Date of Birth DD/MM/YYYY*</label>
+                    <input type="text" id="dob" name="dob" placeholder="Date of Birth" required>
+                    <br><br>
+                    <label for="gender">Gender*</label>
+                    <select id="gender" name="gender" required>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <br><br>
+                    <label for="mstatus">Marital Status*</label>
+                    <select id="mstatus" name="mstatus" required>
+                        <option value="Married">Married</option>
+                        <option value="Unmarried">Unmarried</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <br><br>
+                    <label for="id_proof">ID Proof*</label>
+                        <select id="id_proof" name="id_proof" required>
+                        <option value="AADHAR">AADHAR</option>
+                        <option value="PAN-CARD">PAN-CARD</option>
+                        <option value="DRIVING-LICENSE">DRIVING-LICENSE</option>
+                        <option value="OTHER">OTHER</option>
+                    </select>
+                    <label for="pic">Upload ID proof*</label>
+                    <input type="file" id="pic" name="pic" accept="image/*" >
+                    <br><br>
+                    <label for="father_name">Father's Name*</label>
+                    <input type="text" id="father_name" name="father_name" placeholder="Father's Name" required>
+                    <br><br>
+                    <label for="photo">Upload Photo*</label>
+                    <input type="file" id="photo" name="photo" accept="image/*" >
+                    <br><br>
+            </div>
+            <div class="box">
+                <!-- More form fields -->
+                <label for="mobile">Mobile*</label>
+                    <input type="text" id="mobile" name="mobile" placeholder="mobile" required>
+                    <br><br>
+                    <label for="amobile">Alternate Mobile*</label>
+                    <input type="text" id="amobile" name="amobile" placeholder="amobile" required>
+                    <br><br>
+                    <label for="aemail">Alternate email*</label>
+                    <input type="text" id="aemail" name="aemail" placeholder="aemail" required>
+                    <br><br>
+            </div>
+            <div class="box">
+                <!-- More form fields -->
+                <div class="col-md-6">
+                    <span class="control-label" for="cad">Correspondence Address </span>
+                    <br>
+                    <br>
+                    <div>
+                        <textarea style="height:40px" placeholder="Street" class="form-control input-md" id="cadd" name="cadd" maxlength="200" required=""></textarea>
+                    </div>
+                
+                    <div>
+                        <textarea style="height:40px" placeholder="City" class="form-control input-md" name="cadd1" id="cadd1" maxlength="200" required=""></textarea>
+                    </div>
+                
+                    <div>
+                        <textarea style="height:40px" placeholder="State" class="form-control input-md" name="cadd2" id="cadd2" maxlength="200" required=""></textarea>
+                    </div>
+                
+                    <div>
+                        <textarea style="height:40px" placeholder="Country" class="form-control input-md" name="cadd3" id="cadd3" maxlength="200" required=""></textarea>
+                    </div>
+                
+                    <div>
+                        <textarea style="height:40px" placeholder="PIN/ZIP" class="form-control input-md" name="cadd4" id="cadd4" maxlength="6" required=""></textarea>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <span class="control-label" for="pad">Permanent Address </span>
+                    <br>
+                    <br>
+                    <div>
+                        <textarea style="height:40px" placeholder="Street" class="form-control input-md" name="padd" id="padd" maxlength="200" required=""></textarea>
+                    </div>
+                
+                    <div>
+                        <textarea style="height:40px" placeholder="City" class="form-control input-md" name="padd1" id="padd1" maxlength="200" required=""></textarea>
+                    </div>
+                
+                    <div>
+                        <textarea style="height:40px" placeholder="State" class="form-control input-md" name="padd2" id="padd2" maxlength="200" required=""></textarea>
+                    </div>
+                
+                    <div>
+                        <textarea style="height:40px" placeholder="Country" class="form-control input-md" name="padd3" id="padd3" maxlength="200" required=""></textarea>
+                    </div>
+                
+                    <div>
+                        <textarea style="height:40px" placeholder="PIN/ZIP" class="form-control input-md" name="padd4" id="padd4" maxlength="6" required=""></textarea>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
